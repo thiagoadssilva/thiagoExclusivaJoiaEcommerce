@@ -1,19 +1,7 @@
+import Layout from '../components/Layout';
 
 function Index() {
-  return (
-    <div>
-      <div>
-        HEAD
-      </div>
-      <div>
-        Content
-      </div>
-      <div>
-        FOOTER
-      </div>
-    </div>
-
-  );
+  return <Layout>Thiago jose da silva</Layout>;
 }
 
 export default Index;

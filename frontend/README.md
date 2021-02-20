@@ -11,7 +11,7 @@
 <hr>
 
 ## React-bootstrap
-     yarn add react-bootstrap bootstrap  --save
+     yarn add bootstrap  --save
      
      yarn add reactstrap --save
 

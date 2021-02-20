@@ -1,6 +1,7 @@
 import { ThemeProvider } from 'styled-components';
 import GlobalStyle from '../styles/global';
 import theme from '../styles/theme';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 
 export default function App({ Component, pageProps }) {
