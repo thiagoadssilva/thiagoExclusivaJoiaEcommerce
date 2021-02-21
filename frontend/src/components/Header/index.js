@@ -1,11 +1,24 @@
+
 import {
-  Container
+  Container,
+  ContainerHeader,
+  ContainerMenus,
+  ContainerTitle,
+  ContainerSearch,
+  ContainerCartCall
 } from './styled';
 
 function Header() {
   return (
     <Container>
-      HEADER
+      
+      <ContainerHeader>
+        <ContainerTitle>EXCLUSIVA JOIA</ContainerTitle>
+        <ContainerSearch>search</ContainerSearch>
+        <ContainerCartCall>Atendimento / minha sacola(0)</ContainerCartCall>
+      </ContainerHeader>
+
+      <ContainerMenus>MENUS</ContainerMenus>
     </Container>
   );
 }

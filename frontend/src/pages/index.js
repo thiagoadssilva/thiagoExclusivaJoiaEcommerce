@@ -1,7 +1,9 @@
 import Layout from '../components/Layout';
 
 function Index() {
-  return <Layout>Thiago jose da silva</Layout>;
+  return <Layout>
+    
+  </Layout>;
 }
 
 export default Index;
