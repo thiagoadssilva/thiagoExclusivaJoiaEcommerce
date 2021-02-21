@@ -15,6 +15,8 @@
      
      yarn add reactstrap --save
 
+     yarn add react-bootstrap --save
+
 * Referências: https://react-bootstrap.github.io/
 
 <hr>

@@ -1,3 +1,4 @@
+import { Form, Button, FormControl } from 'react-bootstrap';
 
 import {
   Container,
@@ -11,10 +12,16 @@ import {
 function Header() {
   return (
     <Container>
-      
+
       <ContainerHeader>
         <ContainerTitle>EXCLUSIVA JOIA</ContainerTitle>
-        <ContainerSearch>search</ContainerSearch>
+        <ContainerSearch>
+          <Form inline>
+            <FormControl type="text" placeholder="Search" className="mr-sm-2" />
+            <Button style={{backgroundColor: (props) => props.theme.colors.button}}>Pesquisar</Button>
+            <Button style={{backgroundColor: (props) => props.theme.colors.button}}>Pesquisar</Button>
+          </Form>
+        </ContainerSearch>
         <ContainerCartCall>Atendimento / minha sacola(0)</ContainerCartCall>
       </ContainerHeader>
 
