@@ -3,7 +3,7 @@ const Theme = {
       primary: '#CCC',
       secondary: '#000000',
       back: '#FFFFFF',
-      button: '#c3164b',
+      button: '#E83F5B',
     },
   }
   

@@ -1,10 +1,25 @@
-import { createGlobalStyle } from 'styled-components'
+import {
+  createGlobalStyle
+} from 'styled-components'
 
-const GlobalStyle = createGlobalStyle`
-  body {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+const GlobalStyle = createGlobalStyle `
+  *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+  }
+
+  body, input, textarea, button{
+      font: 400 15px sans-serif;
+  }
+
+  button{
+      cursor: pointer;
+  }
+
+  a{
+      color: inherit;
+      text-decoration: none;
   }
 `;
 

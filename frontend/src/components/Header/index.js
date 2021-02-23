@@ -1,4 +1,7 @@
-import { Form, Button, FormControl } from 'react-bootstrap';
+import { library } from '@fortawesome/fontawesome-svg-core';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { fas } from '@fortawesome/free-solid-svg-icons';
+library.add(fas);
 
 import {
   Container,
@@ -6,7 +9,13 @@ import {
   ContainerMenus,
   ContainerTitle,
   ContainerSearch,
-  ContainerCartCall
+  ContainerCartCall,
+  ContainerInput,
+  ContainerSearchIcon,
+  ContainerCall,
+  ContainerCart,
+  ContainerInputMobile,
+  ContainerSearchMobile,
 } from './styled';
 
 function Header() {
@@ -14,18 +23,36 @@ function Header() {
     <Container>
 
       <ContainerHeader>
+
         <ContainerTitle>EXCLUSIVA JOIA</ContainerTitle>
+
         <ContainerSearch>
-          <Form inline>
-            <FormControl type="text" placeholder="Search" className="mr-sm-2" />
-            <Button style={{backgroundColor: (props) => props.theme.colors.button}}>Pesquisar</Button>
-            <Button style={{backgroundColor: (props) => props.theme.colors.button}}>Pesquisar</Button>
-          </Form>
+          <ContainerInput placeholder="O que você procura?" />
+          <ContainerSearchIcon>
+            <FontAwesomeIcon icon="search" />
+          </ContainerSearchIcon>
         </ContainerSearch>
-        <ContainerCartCall>Atendimento / minha sacola(0)</ContainerCartCall>
+
+        <ContainerCartCall>
+          <ContainerCall>
+            <FontAwesomeIcon icon="envelope" /> Atendimento
+          </ContainerCall>
+          <ContainerCart>
+            <FontAwesomeIcon icon="shopping-cart" /> Minha sacola (0)
+          </ContainerCart>
+        </ContainerCartCall>
+
+        <ContainerSearchMobile>
+          <ContainerInputMobile placeholder="O que você procura?" />
+        </ContainerSearchMobile>
+
       </ContainerHeader>
 
-      <ContainerMenus>MENUS</ContainerMenus>
+
+
+      <ContainerMenus>
+        todos os menus vai ser um componente?
+      </ContainerMenus>
     </Container>
   );
 }
