@@ -1,11 +1,26 @@
+//import formPayment from '../../../public/favicon.ico';
+
 import {
-  Container
+  Container,
+  ContainerPagamento,
+  ContainerRedesSociais
 } from './styled';
 
 function Footer() {
   return (
     <Container>
-      FOOTER
+      
+      <ContainerPagamento>
+        Formas de Pagamento
+        <img src="pag.png"/>
+      </ContainerPagamento>
+
+      EXCLUSIVA JOIA
+
+      <ContainerRedesSociais>
+        Nos siga nas redes sociais
+      </ContainerRedesSociais>
+
     </Container>
   );
 }

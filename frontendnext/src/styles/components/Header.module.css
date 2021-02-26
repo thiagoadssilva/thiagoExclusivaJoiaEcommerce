@@ -1,0 +1,138 @@
+.containerHeader{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    background-color: #FFF;
+
+    padding: 15px;
+    height: 80px;
+}
+
+.containerTitle{
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.containerMenus{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #000;
+    color: #FFF;
+
+    padding: 15px;
+}
+
+.containerSearch{
+    box-shadow:  0 0 0 0;
+    border-top: 0 none;
+    border-left: 0 none;
+    border-right: 0 none;
+    outline: 0;
+    margin-right: 10px;
+    padding-left: 5px;
+    width: 400px;
+}
+
+.containerImg{
+    width: 30px;
+    height: 30px;
+}
+
+.containerSearchImg{
+    display: flex;
+    align-items: center;
+}
+
+.containerCardCall{
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.containerImgCall{
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+.containerSpan{
+    font-size: 20px;
+}
+
+
+.containerSearchImgMobile{
+    display: none;
+}
+
+.containerSearchMobile{
+    box-shadow:  0 0 0 0;
+    border-top: 0 none;
+    border-left: 0 none;
+    border-right: 0 none;
+    outline: 0;
+    margin-right: 10px;
+    padding-left: 5px;
+    width: 400px;
+}
+
+.containerImgMobile{
+    width: 30px;
+    height: 30px;
+}
+
+@media(max-width: 1200px){
+    .containerImgCall{
+        width: 20px;
+        height: 20px;
+        margin-right: 5px;
+    }
+
+    .containerSpan{
+        font-size:  15px;
+    }
+    
+    .containerTitle{
+        font-size: 15px;
+        font-weight: bold;
+    }
+
+    .containerSearch{
+        box-shadow:  0 0 0 0;
+        border-top: 0 none;
+        border-left: 0 none;
+        border-right: 0 none;
+        outline: 0;
+        margin-right: 10px;
+        padding-left: 5px;
+        width: 300px;
+    }
+}
+
+@media(max-width: 900px){
+    .containerSearch{
+        display: none;
+    }
+
+    .containerSearchImgMobile{
+        display: block;
+    }
+
+    .containerImg{
+        display: none;
+    }
+
+    .containerHeader{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    
+        background-color: #FFF;
+    
+        height: 120px;
+    }
+}

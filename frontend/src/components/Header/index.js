@@ -48,8 +48,6 @@ function Header() {
 
       </ContainerHeader>
 
-
-
       <ContainerMenus>
         todos os menus vai ser um componente?
       </ContainerMenus>
