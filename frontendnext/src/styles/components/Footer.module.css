@@ -1,0 +1,57 @@
+.container{
+    background-color: #000;
+    height: 90px;
+    color: #FFF;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container span{
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.containerFormaPagamento{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.containerRedesSociais{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.containerFormaPagamento span{
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.image{
+    height: 20px;
+    margin-top: 10px;    
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.containerImage{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@media (max-width: 600px){
+    .containerFormaPagamento{
+        display: none;
+    }
+    .containerRedesSociais{
+        display: none;
+    }
+    .container{
+        justify-content: center;
+    }
+}
