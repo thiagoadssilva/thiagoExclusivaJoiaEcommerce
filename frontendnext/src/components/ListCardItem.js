@@ -9,9 +9,9 @@ function ListCardItem() {
 
   const products = useContext(ListCardItemContext);
   console.log(products[0]);
-  let dogs = products[0].filter((animal) => {
-    return animal.type === 'dog';
-  })
+  // let dogs = products[0].filter((animal) => {
+  //   return animal.type === 'dog';
+  // })
 
   //console.log(dogs);
 
