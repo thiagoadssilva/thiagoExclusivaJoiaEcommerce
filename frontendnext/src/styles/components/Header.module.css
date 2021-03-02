@@ -3,7 +3,7 @@
     align-items: center;
     justify-content: space-between;
 
-    background-color: #FFF;
+    background-color: #CCC;
 
     padding: 15px;
     height: 80px;
@@ -33,6 +33,7 @@
     margin-right: 10px;
     padding-left: 5px;
     width: 400px;
+    background-color: #CCC;
 }
 
 .containerImg{
@@ -77,6 +78,7 @@
     margin-right: 10px;
     padding-left: 5px;
     width: 400px;
+    background-color: #CCC;
 }
 
 .containerImgMobile{
@@ -119,6 +121,7 @@
 
     .containerSearchImgMobile{
         display: block;
+        background-color: #CCC;
     }
 
     .containerImg{
@@ -131,7 +134,7 @@
         align-items: center;
         justify-content: space-between;
     
-        background-color: #FFF;
+        background-color: #CCC;
     
         height: 120px;
     }

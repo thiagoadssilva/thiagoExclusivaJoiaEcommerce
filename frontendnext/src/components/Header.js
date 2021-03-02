@@ -11,7 +11,7 @@ function Header() {
           <img className={styles.containerImg} src="search.png" alt="Pesquisar" />
         </div>
 
-       
+
 
         <div className={styles.containerCardCall}>
           <img className={styles.containerImgCall} src="envelope.png" />
@@ -31,7 +31,7 @@ function Header() {
 
       <div className={styles.containerMenus}>
         Menus
-            </div>
+      </div>
     </div>
 
   );
