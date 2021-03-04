@@ -1,4 +1,5 @@
 import styles from '../styles/components/Header.module.css';
+import Menu from '../components/Menu';
 
 function Header() {
   return (
@@ -27,10 +28,8 @@ function Header() {
 
       </div>
 
-
-
       <div className={styles.containerMenus}>
-        Menus
+        <Menu />
       </div>
     </div>
 

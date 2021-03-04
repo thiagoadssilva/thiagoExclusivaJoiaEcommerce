@@ -1,0 +1,13 @@
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    background-color: #000;
+    font-weight: 200;
+    cursor: pointer;
+}
+
+.container :hover{
+    font-weight: 900;
+}

@@ -1,30 +1,26 @@
 import styles from '../styles/components/ListCardItem.module.css';
 import CardItem from '../components/CardItem';
-import { useEffect } from 'react';
 
-import { useContext } from 'react';
+import { useContext, useEffect } from 'react';
 import ListCardItemContext from '../contexts/ListCardItemContext';
 
 function ListCardItem() {
+  const { newArrayProducts } = useContext(ListCardItemContext);
 
-  const products = useContext(ListCardItemContext);
-  console.log(products[0]);
-  // let dogs = products[0].filter((animal) => {
-  //   return animal.type === 'dog';
-  // })
+  function handleTeste(){
+    {newArrayProducts.map(item => (
+      <CardItem item={item} />
+    ))}
+  }
 
-  //console.log(dogs);
-
-
+  useEffect(() =>{
+    handleTeste();
+  },[newArrayProducts]);
 
   return (
-    <div className={styles.container}>
-      {products[0].bracellete.map(item => (
-        <CardItem item={item} />
-      ))}
-
+    <div className={styles.container} onClick={handleTeste}>
+      {handleTeste()}
     </div>
-
   );
 }
 

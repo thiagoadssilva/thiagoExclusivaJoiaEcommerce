@@ -2,8 +2,6 @@ import styles from '../styles/components/CardItem.module.css';
 
 function CardItem(props) {
 
-  //console.log(props.item);
-
   return (
     <div className={styles.container}>
       <div className={styles.containerCard}>
