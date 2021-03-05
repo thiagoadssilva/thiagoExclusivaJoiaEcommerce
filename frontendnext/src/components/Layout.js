@@ -6,9 +6,13 @@ import ListCardItem from '../components/ListCardItem';
 import ListCardItemContext from '../contexts/ListCardItemContext';
 import products from '../../products.json';
 
+import {useState} from 'react';
+
 function Layout() {
-  let newArrayProducts = [];
-  let productCategories ='';
+  const [newArrayProducts, setNewArrayProducts] = useState([]);
+  const [controlMessage, setControlMessage] = useState(false);
+  
+  var productCategories ='';
 
   function chosenItem(param) {
     if(param === 'Anéis'){
@@ -17,21 +21,40 @@ function Layout() {
     if(param === 'Alianças'){
       productCategories = products[0].Alianças;
     }
+    if(param === 'Brincos'){
+      productCategories = products[0].Brincos;
+    }
+    if(param === 'Conjuntos'){
+      productCategories = products[0].Conjuntos;
+    }
+    if(param === 'Correntes'){
+      productCategories = products[0].Correntes;
+    }
+    if(param === 'Pulseiras'){
+      productCategories = products[0].Pulseiras;
+    }
+    if(param === 'Coleção'){
+      productCategories = products[0].Coleção;
+    }
+    if(param === 'Symbol'){
+      productCategories = products[0].Symbol;
+    }
+    if(param === 'Outleet'){
+      productCategories = products[0].Outleet;
+    }
+    if(param === 'Verão'){
+      productCategories = products[0].Verão;
+    }
     
-    newArrayProducts = productCategories.map((function(elemt){
+    setNewArrayProducts( productCategories.map((function(elemt){
       return elemt;
-    }));
-
-    console.log(newArrayProducts);
+    })));
+    setControlMessage(true);
   }
-
   
-  
-  
-
   return (
     <div className={styles.containerContent}>
-      <ListCardItemContext.Provider value={{ newArrayProducts, chosenItem }} >
+      <ListCardItemContext.Provider value={{ newArrayProducts, chosenItem, controlMessage}} >
         <Header />
         <ListCardItem />
         <Footer />

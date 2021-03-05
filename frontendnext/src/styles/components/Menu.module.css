@@ -1,4 +1,6 @@
-.container{
+.container {}
+
+.containerItemMenu {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -6,8 +8,50 @@
     background-color: #000;
     font-weight: 200;
     cursor: pointer;
+
 }
 
-.container :hover{
+
+
+.containerItemMenu :hover {
     font-weight: 900;
+}
+
+.containerImageMenu {
+    display: none;
+}
+
+.itemMenu {
+    display: block;
+}
+
+.containerItemMenuResponsive {
+    display: none;
+}
+
+@media(max-width: 700px) {
+    .containerImageMenu {
+        display: block;
+        cursor: pointer;
+        font-size: 15px;
+    }
+
+    .containerItemMenu {
+        display: none;
+    }
+
+    .containerItemMenuResponsive {
+        display: block;
+        padding: 10px;
+        cursor: pointer;
+
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .containerItemMenuResponsive :hover {
+        font-weight: 900;
+        font-size: 15px;
+    }
 }

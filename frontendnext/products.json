@@ -121,6 +121,300 @@
         "description": "Tudo do melhor para você, queremos o melhor para você.asdasdaasdasdasdassadasdassadadssa",
         "price": 60.00
       }
+    ],
+    "Brincos": [
+      {
+        "name": "Brincos",
+        "description": "Tudo do melhor para você, queremos o melhor para você.asdasdaasdasdasdassadasdassadadssa.",
+        "price": 80.00
+      },
+      {
+        "name": "Brincos",
+        "description": "Tudo do melhor para você, queremos o melhor para você.asdasdaasdasdasdassadasdassadadssa",
+        "price": 60.00
+      },
+      {
+        "name": "Brincos",
+        "description": "Tudo do melhor para você, queremos o melhor para você.asdasdaasdasdasdassadasdassadadssa",
+        "price": 60.00
+      },
+      {
+        "name": "Brincos",
+        "description": "Tudo do melhor para você, queremos o melhor para você.asdasdaasdasdasdassadasdassadadssa",
+        "price": 60.00
+      },
+      {
+        "name": "Brincos",
+        "description": "Tudo do melhor para você, queremos o melhor para você.asdasdaasdasdasdassadasdassadadssa",
+        "price": 60.00
+      },
+      {
+        "name": "Brincos",
+        "description": "Tudo do melhor para você, queremos o melhor para você.asdasdaasdasdasdassadasdassadadssa",
+        "price": 60.00
+      },
+      {
+        "name": "Brincos",
+        "description": "Tudo do melhor para você, queremos o melhor para você.asdasdaasdasdasdassadasdassadadssa",
+        "price": 60.00
+      },
+      {
+        "name": "Brincos",
+        "description": "Tudo do melhor para você, queremos o melhor para você.asdasdaasdasdasdassadasdassadadssa",
+        "price": 60.00
+      }
+    ],
+    "Conjuntos": [
+      {
+        "name": "Conjuntos",
+        "description": "Tudo do melhor para você, queremos o melhor para você.asdasdaasdasdasdassadasdassadadssa.",
+        "price": 80.00
+      },
+      {
+        "name": "Conjuntos",
+        "description": "Tudo do melhor para você, queremos o melhor para você.asdasdaasdasdasdassadasdassadadssa",
+        "price": 60.00
+      },
+      {
+        "name": "Conjuntos",
+        "description": "Tudo do melhor para você, queremos o melhor para você.asdasdaasdasdasdassadasdassadadssa",
+        "price": 60.00
+      },
+      {
+        "name": "Conjuntos",
+        "description": "Tudo do melhor para você, queremos o melhor para você.asdasdaasdasdasdassadasdassadadssa",
+        "price": 60.00
+      },
+      {
+        "name": "Conjuntos",
+        "description": "Tudo do melhor para você, queremos o melhor para você.asdasdaasdasdasdassadasdassadadssa",
+        "price": 60.00
+      },
+      {
+        "name": "Conjuntos",
+        "description": "Tudo do melhor para você, queremos o melhor para você.asdasdaasdasdasdassadasdassadadssa",
+        "price": 60.00
+      },
+      {
+        "name": "Conjuntos",
+        "description": "Tudo do melhor para você, queremos o melhor para você.asdasdaasdasdasdassadasdassadadssa",
+        "price": 60.00
+      },
+      {
+        "name": "Conjuntos",
+        "description": "Tudo do melhor para você, queremos o melhor para você.asdasdaasdasdasdassadasdassadadssa",
+        "price": 60.00
+      }
+    ],
+    "Pulseiras": [
+      {
+        "name": "Pulseiras",
+        "description": "Tudo do melhor para você, queremos o melhor para você.asdasdaasdasdasdassadasdassadadssa.",
+        "price": 80.00
+      },
+      {
+        "name": "Pulseiras",
+        "description": "Tudo do melhor para você, queremos o melhor para você.asdasdaasdasdasdassadasdassadadssa",
+        "price": 60.00
+      },
+      {
+        "name": "Pulseiras",
+        "description": "Tudo do melhor para você, queremos o melhor para você.asdasdaasdasdasdassadasdassadadssa",
+        "price": 60.00
+      },
+      {
+        "name": "Pulseiras",
+        "description": "Tudo do melhor para você, queremos o melhor para você.asdasdaasdasdasdassadasdassadadssa",
+        "price": 60.00
+      },
+      {
+        "name": "Pulseiras",
+        "description": "Tudo do melhor para você, queremos o melhor para você.asdasdaasdasdasdassadasdassadadssa",
+        "price": 60.00
+      },
+      {
+        "name": "Pulseiras",
+        "description": "Tudo do melhor para você, queremos o melhor para você.asdasdaasdasdasdassadasdassadadssa",
+        "price": 60.00
+      },
+      {
+        "name": "Pulseiras",
+        "description": "Tudo do melhor para você, queremos o melhor para você.asdasdaasdasdasdassadasdassadadssa",
+        "price": 60.00
+      },
+      {
+        "name": "Pulseiras",
+        "description": "Tudo do melhor para você, queremos o melhor para você.asdasdaasdasdasdassadasdassadadssa",
+        "price": 60.00
+      }
+    ],
+    "Coleção": [
+      {
+        "name": "Coleção",
+        "description": "Tudo do melhor para você, queremos o melhor para você.asdasdaasdasdasdassadasdassadadssa.",
+        "price": 80.00
+      },
+      {
+        "name": "Coleção",
+        "description": "Tudo do melhor para você, queremos o melhor para você.asdasdaasdasdasdassadasdassadadssa",
+        "price": 60.00
+      },
+      {
+        "name": "Coleção",
+        "description": "Tudo do melhor para você, queremos o melhor para você.asdasdaasdasdasdassadasdassadadssa",
+        "price": 60.00
+      },
+      {
+        "name": "Coleção",
+        "description": "Tudo do melhor para você, queremos o melhor para você.asdasdaasdasdasdassadasdassadadssa",
+        "price": 60.00
+      },
+      {
+        "name": "Coleção",
+        "description": "Tudo do melhor para você, queremos o melhor para você.asdasdaasdasdasdassadasdassadadssa",
+        "price": 60.00
+      },
+      {
+        "name": "Coleção",
+        "description": "Tudo do melhor para você, queremos o melhor para você.asdasdaasdasdasdassadasdassadadssa",
+        "price": 60.00
+      },
+      {
+        "name": "Coleção",
+        "description": "Tudo do melhor para você, queremos o melhor para você.asdasdaasdasdasdassadasdassadadssa",
+        "price": 60.00
+      },
+      {
+        "name": "Coleção",
+        "description": "Tudo do melhor para você, queremos o melhor para você.asdasdaasdasdasdassadasdassadadssa",
+        "price": 60.00
+      }
+    ],
+    "Outleet": [
+      {
+        "name": "Outleet",
+        "description": "Tudo do melhor para você, queremos o melhor para você.asdasdaasdasdasdassadasdassadadssa.",
+        "price": 80.00
+      },
+      {
+        "name": "Outleet",
+        "description": "Tudo do melhor para você, queremos o melhor para você.asdasdaasdasdasdassadasdassadadssa",
+        "price": 60.00
+      },
+      {
+        "name": "Outleet",
+        "description": "Tudo do melhor para você, queremos o melhor para você.asdasdaasdasdasdassadasdassadadssa",
+        "price": 60.00
+      },
+      {
+        "name": "Outleet",
+        "description": "Tudo do melhor para você, queremos o melhor para você.asdasdaasdasdasdassadasdassadadssa",
+        "price": 60.00
+      },
+      {
+        "name": "Outleet",
+        "description": "Tudo do melhor para você, queremos o melhor para você.asdasdaasdasdasdassadasdassadadssa",
+        "price": 60.00
+      },
+      {
+        "name": "Outleet",
+        "description": "Tudo do melhor para você, queremos o melhor para você.asdasdaasdasdasdassadasdassadadssa",
+        "price": 60.00
+      },
+      {
+        "name": "Outleet",
+        "description": "Tudo do melhor para você, queremos o melhor para você.asdasdaasdasdasdassadasdassadadssa",
+        "price": 60.00
+      },
+      {
+        "name": "Outleet",
+        "description": "Tudo do melhor para você, queremos o melhor para você.asdasdaasdasdasdassadasdassadadssa",
+        "price": 60.00
+      }
+    ],
+    "Verão": [
+      {
+        "name": "Verão",
+        "description": "Tudo do melhor para você, queremos o melhor para você.asdasdaasdasdasdassadasdassadadssa.",
+        "price": 80.00
+      },
+      {
+        "name": "Verão",
+        "description": "Tudo do melhor para você, queremos o melhor para você.asdasdaasdasdasdassadasdassadadssa",
+        "price": 60.00
+      },
+      {
+        "name": "Verão",
+        "description": "Tudo do melhor para você, queremos o melhor para você.asdasdaasdasdasdassadasdassadadssa",
+        "price": 60.00
+      },
+      {
+        "name": "Verão",
+        "description": "Tudo do melhor para você, queremos o melhor para você.asdasdaasdasdasdassadasdassadadssa",
+        "price": 60.00
+      },
+      {
+        "name": "Verão",
+        "description": "Tudo do melhor para você, queremos o melhor para você.asdasdaasdasdasdassadasdassadadssa",
+        "price": 60.00
+      },
+      {
+        "name": "Verão",
+        "description": "Tudo do melhor para você, queremos o melhor para você.asdasdaasdasdasdassadasdassadadssa",
+        "price": 60.00
+      },
+      {
+        "name": "Verão",
+        "description": "Tudo do melhor para você, queremos o melhor para você.asdasdaasdasdasdassadasdassadadssa",
+        "price": 60.00
+      },
+      {
+        "name": "Verão",
+        "description": "Tudo do melhor para você, queremos o melhor para você.asdasdaasdasdasdassadasdassadadssa",
+        "price": 60.00
+      }
+    ],
+    "Symbol": [
+      {
+        "name": "Symbol",
+        "description": "Tudo do melhor para você, queremos o melhor para você.asdasdaasdasdasdassadasdassadadssa.",
+        "price": 80.00
+      },
+      {
+        "name": "Symbol",
+        "description": "Tudo do melhor para você, queremos o melhor para você.asdasdaasdasdasdassadasdassadadssa",
+        "price": 60.00
+      },
+      {
+        "name": "Symbol",
+        "description": "Tudo do melhor para você, queremos o melhor para você.asdasdaasdasdasdassadasdassadadssa",
+        "price": 60.00
+      },
+      {
+        "name": "Symbol",
+        "description": "Tudo do melhor para você, queremos o melhor para você.asdasdaasdasdasdassadasdassadadssa",
+        "price": 60.00
+      },
+      {
+        "name": "Symbol",
+        "description": "Tudo do melhor para você, queremos o melhor para você.asdasdaasdasdasdassadasdassadadssa",
+        "price": 60.00
+      },
+      {
+        "name": "Symbol",
+        "description": "Tudo do melhor para você, queremos o melhor para você.asdasdaasdasdasdassadasdassadadssa",
+        "price": 60.00
+      },
+      {
+        "name": "Symbol",
+        "description": "Tudo do melhor para você, queremos o melhor para você.asdasdaasdasdasdassadasdassadadssa",
+        "price": 60.00
+      },
+      {
+        "name": "Symbol",
+        "description": "Tudo do melhor para você, queremos o melhor para você.asdasdaasdasdasdassadasdassadadssa",
+        "price": 60.00
+      }
     ]
   }
     
