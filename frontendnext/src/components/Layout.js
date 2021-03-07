@@ -2,71 +2,75 @@ import styles from '../styles/components/Layout.module.css';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 import ListCardItem from '../components/ListCardItem';
+import ItemCarPurchase from '../components/ItemCarPurchase';
 
 import ListCardItemContext from '../contexts/ListCardItemContext';
 import products from '../../products.json';
 
-import {useState} from 'react';
+import { useState } from 'react';
 
 function Layout() {
   const [newArrayProducts, setNewArrayProducts] = useState([]);
   const [controlMessage, setControlMessage] = useState(false);
   const [qtdProductsCar, setQtdProductsCar] = useState(0);
-  const [car, setCar] = useState({products:[]});
-  
-  var productCategories ='';
+  const [car, setCar] = useState({ products: [] });
+  const [controlCarPurchase, setControlCarPurchase] = useState(false);
+
+  console.log(controlCarPurchase);
+
+  var productCategories = '';
 
   function chosenItem(param) {
-    if(param === 'Anéis'){
+    if (param === 'Anéis') {
       productCategories = products[0].Anéis;
     }
-    if(param === 'Alianças'){
+    if (param === 'Alianças') {
       productCategories = products[0].Alianças;
     }
-    if(param === 'Brincos'){
+    if (param === 'Brincos') {
       productCategories = products[0].Brincos;
     }
-    if(param === 'Conjuntos'){
+    if (param === 'Conjuntos') {
       productCategories = products[0].Conjuntos;
     }
-    if(param === 'Correntes'){
+    if (param === 'Correntes') {
       productCategories = products[0].Correntes;
     }
-    if(param === 'Pulseiras'){
+    if (param === 'Pulseiras') {
       productCategories = products[0].Pulseiras;
     }
-    if(param === 'Coleção'){
+    if (param === 'Coleção') {
       productCategories = products[0].Coleção;
     }
-    if(param === 'Symbol'){
+    if (param === 'Symbol') {
       productCategories = products[0].Symbol;
     }
-    if(param === 'Outleet'){
+    if (param === 'Outleet') {
       productCategories = products[0].Outleet;
     }
-    if(param === 'Verão'){
+    if (param === 'Verão') {
       productCategories = products[0].Verão;
     }
-    
-    setNewArrayProducts( productCategories.map((function(elemt){
+
+    setNewArrayProducts(productCategories.map((function (elemt) {
       return elemt;
     })));
     setControlMessage(true);
   }
 
-  function addProducts(productCar){
+  function addProducts(productCar) {
 
     const objCar = Object.assign({}, car);
     let newProduct = true;
-    
-    objCar.products.forEach((prod, index) =>{
-      if(prod.name === productCar.item.name){
+
+    objCar.products.forEach((prod, index) => {
+      if (prod.name === productCar.item.name) {
         objCar.products[index].qtd++;
         newProduct = false;
       }
     });
 
-    if(newProduct){
+    if (newProduct) {
       objCar.products.push({
         name: productCar.item.name, price: productCar.item.price, qtd: 1
       });
@@ -76,20 +80,29 @@ function Layout() {
     setQtdProductsCar(qtdProductsCar + 1);
 
   }
-  
+
   return (
     <div className={styles.containerContent}>
-      <ListCardItemContext.Provider 
-        value={{ 
-          newArrayProducts, 
-          chosenItem, 
+      <ListCardItemContext.Provider
+        value={{
+          newArrayProducts,
+          chosenItem,
           controlMessage,
           addProducts,
-          qtdProductsCar
-        }} 
+          qtdProductsCar,
+          car,
+          setControlCarPurchase
+        }}
       >
         <Header />
-        <ListCardItem />
+        {!controlCarPurchase &&
+          <ListCardItem />
+        }
+        {controlCarPurchase &&
+          <ItemCarPurchase />
+        }
+
+        
         <Footer />
       </ListCardItemContext.Provider>
     </div>

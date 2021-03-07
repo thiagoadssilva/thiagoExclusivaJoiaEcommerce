@@ -5,7 +5,13 @@ import {useContext} from 'react';
 import ListCardItemContext from '../contexts/ListCardItemContext';
 
 function Header() {
-  const {qtdProductsCar} = useContext(ListCardItemContext);
+  const {qtdProductsCar, setControlCarPurchase} = useContext(ListCardItemContext);
+
+  function openCar(){
+    if(qtdProductsCar > 0){
+      setControlCarPurchase(true);
+    }
+  }
 
   return (
     <div>
@@ -23,8 +29,8 @@ function Header() {
           <img className={styles.containerImgCall} src="envelope.png" />
           <span className={styles.containerSpan}>Atendimento</span>
           <div className={styles.containerCardCall} />
-          <img className={styles.containerImgCall} src="carrinho.png" />
-          <span className={styles.containerSpan}>Minha Sacola ({qtdProductsCar})</span>
+          <img className={styles.containerImgCall} src="carrinho.png" onClick={() => openCar()}/>
+          <span className={styles.containerSpan} onClick={() => openCar()}>Minha Sacola ({qtdProductsCar})</span>
         </div>
 
         <div className={styles.containerSearchImgMobile}>

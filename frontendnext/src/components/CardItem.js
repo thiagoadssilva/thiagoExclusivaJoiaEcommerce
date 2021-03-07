@@ -3,7 +3,7 @@ import styles from '../styles/components/CardItem.module.css';
 function CardItem(props) {
 
   function handlePurchase(produto) {
-    props.addProducts(produto);
+    props.addProducts(produto);    
   }
 
   return (

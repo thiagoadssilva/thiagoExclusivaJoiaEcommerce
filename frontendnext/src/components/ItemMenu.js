@@ -4,10 +4,11 @@ import ListCardItemContext from '../contexts/ListCardItemContext';
 
 
 function ItemMenu(props){
-    const {chosenItem} = useContext(ListCardItemContext);
+    const {chosenItem, setControlCarPurchase} = useContext(ListCardItemContext);
 
     function handleChoose(param){
         chosenItem(param);
+        setControlCarPurchase(false);
     }
 
     return(
