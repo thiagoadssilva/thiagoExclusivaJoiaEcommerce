@@ -11,7 +11,7 @@ function CardItem(props) {
         <span className={styles.containerPrice}>R$ {props.item.price.toFixed(2)}</span>
         <button className={styles.containerButton}>
           <img className={styles.containerbuy} src="/carrinho.png" alt="Anel" />
-          Adicionar no Carrinho
+          Adicionar no CarrinhoAdicionar no Carrinho
         </button>
       </div>
     </div>
