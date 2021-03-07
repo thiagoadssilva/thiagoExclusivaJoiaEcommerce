@@ -1,7 +1,12 @@
 import styles from '../styles/components/Header.module.css';
 import Menu from '../components/Menu';
 
+import {useContext} from 'react';
+import ListCardItemContext from '../contexts/ListCardItemContext';
+
 function Header() {
+  const {qtdProductsCar} = useContext(ListCardItemContext);
+
   return (
     <div>
       <div className={styles.containerHeader}>
@@ -19,7 +24,7 @@ function Header() {
           <span className={styles.containerSpan}>Atendimento</span>
           <div className={styles.containerCardCall} />
           <img className={styles.containerImgCall} src="carrinho.png" />
-          <span className={styles.containerSpan}>Minha Sacola (0)</span>
+          <span className={styles.containerSpan}>Minha Sacola ({qtdProductsCar})</span>
         </div>
 
         <div className={styles.containerSearchImgMobile}>

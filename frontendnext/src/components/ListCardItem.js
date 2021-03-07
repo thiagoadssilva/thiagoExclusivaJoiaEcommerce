@@ -1,17 +1,17 @@
 import styles from '../styles/components/ListCardItem.module.css';
 import CardItem from '../components/CardItem';
 
-import { useContext, useState } from 'react';
+import { useContext } from 'react';
 import ListCardItemContext from '../contexts/ListCardItemContext';
 
 function ListCardItem() {
-  const { newArrayProducts, controlMessage } = useContext(ListCardItemContext);
+  const { newArrayProducts, controlMessage, addProducts } = useContext(ListCardItemContext);
   
 
   return (
     <div className={styles.container}>
       {newArrayProducts.map(item => (
-        <CardItem item={item} />
+        <CardItem item={item} addProducts={addProducts}/>
       ))}
 
       {!controlMessage &&

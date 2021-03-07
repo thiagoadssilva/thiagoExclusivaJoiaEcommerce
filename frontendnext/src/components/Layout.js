@@ -11,6 +11,8 @@ import {useState} from 'react';
 function Layout() {
   const [newArrayProducts, setNewArrayProducts] = useState([]);
   const [controlMessage, setControlMessage] = useState(false);
+  const [qtdProductsCar, setQtdProductsCar] = useState(0);
+  const [car, setCar] = useState({products:[]});
   
   var productCategories ='';
 
@@ -51,10 +53,41 @@ function Layout() {
     })));
     setControlMessage(true);
   }
+
+  function addProducts(productCar){
+
+    const objCar = Object.assign({}, car);
+    let newProduct = true;
+    
+    objCar.products.forEach((prod, index) =>{
+      if(prod.name === productCar.item.name){
+        objCar.products[index].qtd++;
+        newProduct = false;
+      }
+    });
+
+    if(newProduct){
+      objCar.products.push({
+        name: productCar.item.name, price: productCar.item.price, qtd: 1
+      });
+    }
+
+    setCar(objCar);
+    setQtdProductsCar(qtdProductsCar + 1);
+
+  }
   
   return (
     <div className={styles.containerContent}>
-      <ListCardItemContext.Provider value={{ newArrayProducts, chosenItem, controlMessage}} >
+      <ListCardItemContext.Provider 
+        value={{ 
+          newArrayProducts, 
+          chosenItem, 
+          controlMessage,
+          addProducts,
+          qtdProductsCar
+        }} 
+      >
         <Header />
         <ListCardItem />
         <Footer />
