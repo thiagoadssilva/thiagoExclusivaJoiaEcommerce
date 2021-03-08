@@ -2,7 +2,7 @@ import styles from '../styles/components/Layout.module.css';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 import ListCardItem from '../components/ListCardItem';
-import ItemCarPurchase from '../components/ItemCarPurchase';
+import ListCardPurchase from '../components/ListCardPurchase';
 
 import ListCardItemContext from '../contexts/ListCardItemContext';
 import products from '../../products.json';
@@ -15,8 +15,6 @@ function Layout() {
   const [qtdProductsCar, setQtdProductsCar] = useState(0);
   const [car, setCar] = useState({ products: [] });
   const [controlCarPurchase, setControlCarPurchase] = useState(false);
-
-  console.log(controlCarPurchase);
 
   var productCategories = '';
 
@@ -72,7 +70,10 @@ function Layout() {
 
     if (newProduct) {
       objCar.products.push({
-        name: productCar.item.name, price: productCar.item.price, qtd: 1
+        name: productCar.item.name,
+        price: productCar.item.price,
+        qtd: 1,
+        description: productCar.item.description
       });
     }
 
@@ -99,10 +100,8 @@ function Layout() {
           <ListCardItem />
         }
         {controlCarPurchase &&
-          <ItemCarPurchase />
+          <ListCardPurchase />
         }
-
-        
         <Footer />
       </ListCardItemContext.Provider>
     </div>

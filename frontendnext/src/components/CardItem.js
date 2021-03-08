@@ -14,7 +14,7 @@ function CardItem(props) {
         <span className={styles.containerDescription}>{props.item.description}</span>
         <span className={styles.containerPrice}>R$ {props.item.price.toFixed(2)}</span>
         <button className={styles.containerButton} onClick={() => handlePurchase(props)}>
-          <img className={styles.containerbuy} src="/carrinho.png" alt="Anel" />
+          <img className={styles.containerbuy} src="/carrinho.png" alt="Carrinho" />
           Adicionar no Carrinho
         </button>
       </div>
