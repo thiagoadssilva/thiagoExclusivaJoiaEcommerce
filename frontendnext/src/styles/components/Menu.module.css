@@ -1,20 +1,17 @@
-.container {}
-
 .containerItemMenu {
     display: flex;
     align-items: center;
     justify-content: space-between;
 
     background-color: #000;
-    font-weight: 200;
+    font-weight: 300;
     cursor: pointer;
 
+    text-transform: uppercase;
 }
 
-
-
 .containerItemMenu :hover {
-    font-weight: 900;
+    color: #999;
 }
 
 .containerImageMenu {

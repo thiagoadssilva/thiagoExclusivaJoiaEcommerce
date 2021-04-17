@@ -7,9 +7,6 @@ import ListCardItemContext from '../contexts/ListCardItemContext';
 function ListCardItem() {
   const { newArrayProducts, controlMessage, addProducts } = useContext(ListCardItemContext);
   
-  console.log(newArrayProducts);
-
-
   return (
     <div className={styles.container}>
       {newArrayProducts.map(item => (

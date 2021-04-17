@@ -70,6 +70,7 @@ function Layout() {
 
     if (newProduct) {
       objCar.products.push({
+        id: 1 + 1,
         name: productCar.item.name,
         price: productCar.item.price,
         qtd: 1,

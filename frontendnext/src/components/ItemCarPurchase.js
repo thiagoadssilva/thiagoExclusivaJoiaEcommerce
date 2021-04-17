@@ -1,13 +1,9 @@
-
-
 import styles from '../styles/components/ItemCarPurchase.module.css';
 import { useState } from 'react';
 
 function ItemCarPurchase(props) {
   const [qtdProductsMulti, setQtdProductsMulti] = useState(props.item.qtd);
   const [totalPrice, setTotalPrice] = useState(props.item.price * props.item.qtd);
-
-  console.log(props);
 
   function handlePlus() {
     let result = qtdProductsMulti + 1;
@@ -22,7 +18,7 @@ function ItemCarPurchase(props) {
       setQtdProductsMulti(result);
     }
 
-    props.item.splice(1,1);    
+    props.handleRemoveProductCar(props);
 
   }
 
